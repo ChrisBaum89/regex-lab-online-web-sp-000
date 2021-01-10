@@ -22,9 +22,9 @@ def valid_phone_number?(phone)
   result = Array.new
   phone.each do |number|
     new_number = number.scan(/[0-9]/)
-    result << (new_number.count == 10)
+    valid_numbers << (new_number.count == 10)
   end
   #result.all?{|i| i == true}
-  result
+  valid_numbers
 end
 #puts "#{valid_phone_number?(phone)}"
