@@ -18,10 +18,10 @@ end
 
 #phone = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134", "28894546", "(718)891-13135", "234 43 9978", "(800)IloveNY"]
 phone = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
-def valid_phone_number?(phone)
-  valid_numbers = phone
-  phone.each do |number|
-    new_number = number.scan(/[0-9]/)
+def valid_phone_number?(number)
+  
+  phone.each do |n|
+    new_number = n.scan(/[0-9]/)
     valid_numbers << (new_number.count == 10)
   end
   #result.all?{|i| i == true}
