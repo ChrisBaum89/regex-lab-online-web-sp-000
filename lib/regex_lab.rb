@@ -29,4 +29,4 @@ def valid_phone_number?(phone)
 end
 #puts "#{valid_phone_number?(phone)}"
 valid_phone_number?(phone)
-valid_numbers
+puts "#{valid_numbers}"
