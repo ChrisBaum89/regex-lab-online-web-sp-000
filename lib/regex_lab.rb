@@ -27,4 +27,6 @@ def valid_phone_number?(phone)
   #result.all?{|i| i == true}
   valid_numbers
 end
-puts "#{valid_phone_number?(phone)}"
+#puts "#{valid_phone_number?(phone)}"
+valid_phone_number?(phone)
+valid_numbers
