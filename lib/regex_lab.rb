@@ -24,6 +24,7 @@ def valid_phone_number?(phone)
     new_number = number.scan(/[0-9]/)
     result << (new_number.count == 10)
   end
-  result.all?{|i| i == true}
+  #result.all?{|i| i == true}
+  result
 end
 #puts "#{valid_phone_number?(phone)}"
