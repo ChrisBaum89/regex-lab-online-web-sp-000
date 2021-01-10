@@ -25,8 +25,7 @@ def valid_phone_number?(phone)
     valid_numbers << (new_number.count == 10)
   end
   #result.all?{|i| i == true}
-  return valid_numbers
+  valid_numbers
 end
 #puts "#{valid_phone_number?(phone)}"
 valid_phone_number?(phone)
-puts "#{valid_numbers}"
