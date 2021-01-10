@@ -10,26 +10,11 @@ def words_five_letters_long(text)
   text.scan(/\b[a-z,A-Z]{5}\b/)
 end
 
-#text = "I stepped on a Corn Flake, now I'm a cereal killer."
 def first_word_capitalized_and_ends_with_punctuation?(text)
   text.match(/\b[A-Z]\w*\b[.,!]/) != nil ? true : false
 end
-#puts "#{first_word_capitalized_and_ends_with_punctuation?(text)}"
 
-#phone = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134", "28894546", "(718)891-13135", "234 43 9978", "(800)IloveNY"]
-#phone = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
 def valid_phone_number?(number)
   new_number = number.scan(/[0-9]/)
   new_number.count == 10
 end
-
-
-  #phone.each do |n|
-    #new_number = n.scan(/[0-9]/)
-    #valid_numbers << (new_number.count == 10)
-  #end
-  #result.all?{|i| i == true}
-  #valid_numbers
-#end
-#puts "#{valid_phone_number?(phone)}"
-#valid_phone_number?(phone)
