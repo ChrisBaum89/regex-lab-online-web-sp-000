@@ -17,7 +17,7 @@ end
 #puts "#{first_word_capitalized_and_ends_with_punctuation?(text)}"
 
 #phone = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134", "28894546", "(718)891-13135", "234 43 9978", "(800)IloveNY"]
-phone = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
+#phone = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
 def valid_phone_number?(number)
 
   phone.each do |n|
@@ -27,5 +27,5 @@ def valid_phone_number?(number)
   #result.all?{|i| i == true}
   valid_numbers
 end
-puts "#{valid_phone_number?(phone)}"
+#puts "#{valid_phone_number?(phone)}"
 #valid_phone_number?(phone)
